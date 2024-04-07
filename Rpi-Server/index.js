@@ -88,7 +88,7 @@ app.post("/api/accept", (req, res) => {
     }
     res.json({ status: "true", data: "Rejecting UAV" });
 
-    fetch("https://backend-27nr.onrender.comupdate", {
+    fetch("https://backend-27nr.onrender.com/update", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
