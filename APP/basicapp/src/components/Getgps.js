@@ -34,7 +34,7 @@ const Getgps = () => {
         token: token,
       };
 
-      fetch("http://127.0.0.1:3000/getstatus", {
+      fetch("https://backend-27nr.onrender.com/getstatus", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

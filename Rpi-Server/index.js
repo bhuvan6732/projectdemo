@@ -88,7 +88,7 @@ app.post("/api/accept", (req, res) => {
     }
     res.json({ status: "true", data: "Rejecting UAV" });
 
-    fetch("http://127.0.0.1:3000/update", {
+    fetch("https://backend-27nr.onrender.comupdate", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -122,7 +122,7 @@ app.post("/api/reject", (req, res) => {
       };
     }
     res.json({ status: "true", data: "Rejecting UAV" });
-    fetch("http://127.0.0.1:3000/update", {
+    fetch("https://backend-27nr.onrender.com/update", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

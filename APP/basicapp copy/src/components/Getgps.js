@@ -27,7 +27,7 @@ const Getgps = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       // Replace 'http://your-server-endpoint' with your actual server endpoint
-      fetch("http://127.0.0.1:4000/api/helps")
+      fetch("https://projectdemorpiserver.onrender.com/api/helps")
         .then(async (response) => {
           if (response.ok) {
             console.log("Server ping successful");
@@ -116,7 +116,7 @@ const Card1 = ({ data }) => {
 
   const RejectHandle = (Email) => {
     const emailData = { Email };
-    fetch("http://127.0.0.1:4000/api/reject", {
+    fetch("https://projectdemorpiserver.onrender.com/api/reject", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -137,7 +137,7 @@ const Card1 = ({ data }) => {
 
   const ApproveHandle = (Email) => {
     const emailData = { Email };
-    fetch("http://127.0.0.1:4000/api/accept", {
+    fetch("https://projectdemorpiserver.onrender.com/api/accept", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
