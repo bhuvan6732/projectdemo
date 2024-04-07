@@ -1,0 +1,6 @@
+.root{
+    height: 98vh;
+    width: 96vw;
+    display: flex;
+    justify-content: center;
+}
